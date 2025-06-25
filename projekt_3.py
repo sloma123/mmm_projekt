@@ -27,7 +27,7 @@ def parse_inputs():
 
 def update(_):
     vals = parse_inputs()
-    if vals is None or vals[1] == 0 or vals[4] == 0: # sprawdzenie, czy L lub J są zerowe
+    if vals is None or vals[1] == 0 or vals[4] == 0 or vals[7]==0 or vals[8] == 0: # sprawdzenie, czy L, J, T, Czas trwania są różne od zera
         for ax in axs:
             ax.clear()
             ax.text(0.5, 0.5, 'Błędne dane', ha='center', va='center', color='red', fontsize=12)
